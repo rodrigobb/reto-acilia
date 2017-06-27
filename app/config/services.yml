@@ -1,0 +1,7 @@
+services:
+    fresquito.service:
+        class: AciliaChallengeBundle\Service\FresquitoService
+        autowire: true
+        calls:
+           - method: setApiUrl
+             arguments: ['%api_url%']

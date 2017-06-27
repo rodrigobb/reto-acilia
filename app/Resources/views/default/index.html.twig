@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div id="wrapper">
+        <div id="container">
+            <span>Ciudades más frescas</span><br/>
+            {% for city, temp in results %}
+                <span>{{ loop.index }}: {{ city|raw|capitalize }} con {{ temp }} grados</span><br/>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

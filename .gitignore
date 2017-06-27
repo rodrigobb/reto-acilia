@@ -1,0 +1,15 @@
+.buildpath
+.project
+.settings/
+.DS_Store
+
+# IDE - PhpStorm
+######################
+.idea
+
+app/config/parameters.yml
+var/cache/*
+var/logs/*
+vendor
+*.sublime-workspace
+*.sublime-project
